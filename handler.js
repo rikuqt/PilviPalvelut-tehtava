@@ -9,6 +9,8 @@ const randomJoke = () => {
   return jokes[Math.floor(Math.random() * jokes.length)];
 }
 
+const jokesCount = () => jokes.length;
+
 /**
  * Get N random jokes from a jokeArray
  */
@@ -44,4 +46,4 @@ const count = Object.keys(jokes).length;
  */
 const jokeById = (id) => (jokes.filter(jk => jk.id === id)[0]);
 
-module.exports = { jokes, types, randomJoke, randomN, randomTen, randomSelect, jokeById, jokeByType, count };
+module.exports = { jokes, types, randomJoke, randomN, randomTen, randomSelect, jokeById, jokeByType, jokesCount,count };
